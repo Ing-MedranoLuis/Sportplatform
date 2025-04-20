@@ -1,0 +1,80 @@
+﻿@model Proyecto.models.VM.HomeVM
+@{
+    ViewData["Title"] = "Estadisticas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section class="">
+    <h1>Estadisticas</h1>
+    <form>
+        <div class="div_estadisticas_buscarJugador">
+        <input placeholder="Nombre jugador" type="text" name="parameter"  />
+        <button type="submit">Search6</button>
+        </div>
+    </form>
+    <div class="table-responsive  bg-white">
+        <table class="table">
+            <thead style="">
+                <tr >
+                    <th>Per.</th>
+                    <th>Nom.</th>
+                    <th>Equ.</th>
+                     <th>H1</th>
+                      <th>H2</th>
+                    <th>H3</th>
+                     <th>H4</th>
+                    <th>Avg</th>
+                    <th>AB</th>
+                    <th>KK</th>
+                    <th>BB</th>
+                    <th>T.O</th>
+                     <th>TUR.</th>
+                    <th>Pos.</th>
+               
+                  
+                </tr>
+
+            </thead>
+            <tbody>
+
+                @foreach(var item in Model.Numero)
+                {
+                    
+                    <tr>
+                        <td class="rounded-circle ">
+                            <a id="idButton" asp-action="PerfilJugador" asp-controller="Home" asp-area="User" asp-route-id="@item.Id" >
+                            <img src="@item.jugador.Imagen" class="rounded" width="50px" />
+                            </a>
+                        </td>
+                        <td>
+                            
+                            @item.jugador.Nombre
+                        </td>
+                        <td>@item.jugador.equipo.Nombre</td>
+
+                        <td>@item.H1</td>
+                        <td>@item.H2</td>
+                        <td>@item.H3</td>
+                        <td>@item.H4</td>
+                      
+                        <td>
+                            
+                            @item.Avg</td>
+                        <td>@item.TURNOS</td>
+                        <td>@item.KK</td>
+                        <td>@item.BB</td>
+                        <td>@item.TURNOSOFICIALES</td>
+                        <td>@item.TURNOS</td>
+                        <td>@item.jugador.Poscion</td>
+                      
+                       
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <a id="idButton">get data</a>
+    </div>
+</section>

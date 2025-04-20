@@ -1,0 +1,33 @@
+﻿@model Proyecto.models.Models.Noticias
+@{
+    ViewData["Title"] = "DetallesNoticias";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section >
+   <div class="containerDetalles_Noticias">
+     
+
+     
+            @if (Model.video)
+            {
+                <video class="video" src="@Model.Imagen" typeof="video/mp4" controls="controls" muted autoplay width="100%" height="360"></video>
+
+
+            }
+            else
+            {
+                <img src="@Model.Imagen" class="img_noticias_home" />
+            }
+                  <div class="p-5">
+
+                        <H1 class="text-center pb-3"><b>@Model.Titulo </b></H1>
+                @*                <video src="@item.Imagen" typeof="video/mp4" controls="controls"  autoplay width="100%" height="360"></video>*@
+                        <p><B>@Model.Descripcion</B></p>
+
+                   </div>
+        
+    </div>
+
+</section>
+

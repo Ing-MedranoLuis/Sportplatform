@@ -1,0 +1,67 @@
+﻿@model Proyecto.models.Models.Noticias;
+@{
+    ViewData["Title"] = "upsert";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+   
+
+    <form class="border col-md-5 offset-md-3 shadow py-4" asp-action="upsert" asp-controller="noticia" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <h2 class="text-center">@(Model.Id != 0 ? "UPDATE POST" : "NOTICIA POST")</h2>
+            <div asp-validation-summary="ModelOnly" hidden></div>
+            <input asp-for="Id" hidden />
+            <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="Titulo"></label>
+                <input class="form-control shadow" asp-for="Titulo" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+
+            <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="Descripcion"></label>
+                <textarea asp-for="Descripcion" class="form-control shadow"></textarea>
+            </div>
+            <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="video"></label>
+                <input type="checkbox" asp-for="video" />
+               
+            </div>
+
+            <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="Imagen"></label>
+                <input type="file" name="file" accept="video/mp4" class="form-control shadow" asp-for="Imagen" id="imagen" />
+                <span asp-validation-for="Imagen" class="text-danger"></span>
+            </div>
+            <div class="offset-2">
+            <img class="" id="previzualizar"/>
+
+            <div class="loader loading"  style="display:none;" ></div>
+            </div>
+            @if (Model.Id != 0)
+            {
+
+                <div class="col-8 offset-2 rounded text-center">
+                    <br />
+                    <img src="@Model.Imagen" class="upsert_img" />
+                </div>
+            }
+            <br />
+            <partial name="_NoticiaButtons" />
+        </div>
+
+    </form>
+</section>
+
+@section scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+
+<script type="text/javascript" src="~/js/imagenView.js"></script>
+

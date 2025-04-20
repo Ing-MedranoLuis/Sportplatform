@@ -1,0 +1,82 @@
+﻿@model Proyecto.models.VM.JugadoresVM
+@{
+    ViewData["Title"] = "upsert";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section>
+    
+
+    <form class="border col-12 col-md-5 offset-md-3 shadow py-4" action="upsert" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <h2 class="text-center">@(Model.jugador.Id != 0 ? "UPDATE PLAYER" : "POST NEW PLAYER")</h2>
+            <div asp-validation-summary="ModelOnly" hidden></div>
+            <input asp-for="jugador.Id" hidden/>
+        <div class="col-8 offset-2">
+                <br />
+            <label  class="form-label" asp-for="jugador.Nombre"></label>
+                <input class="form-control shadow" asp-for="jugador.Nombre" />
+                <span asp-validation-for="jugador.Nombre" class="text-danger"></span>
+        </div>
+      
+            <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="jugador.Poscion"></label>
+                <input class=" form-control shadow" asp-for="jugador.Poscion" />
+                <span asp-validation-for="jugador.Poscion" class="text-danger"></span>
+        </div >
+ <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="jugador.Cedula"></label>
+                <input class=" form-control shadow" asp-for="jugador.Cedula" />
+                <span asp-validation-for="jugador.Cedula" class="text-danger"></span>
+        </div >
+            <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="jugador.FechaNacimiento"></label>
+                <input class=" form-control shadow" type="date" asp-for="jugador.FechaNacimiento" />
+                <span asp-validation-for="jugador.FechaNacimiento" class="text-danger"></span>
+            </div>
+        <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="jugador.IdEquipo"></label>
+                <select class=" form-control shadow" asp-for="jugador.IdEquipo" asp-items="@Model.equipoLista" >
+                    <option>Lista</option>
+                </select>
+           
+        </div >
+            <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="jugador.Imagen"></label>
+                <input type="file" name="file" class="form-control shadow" asp-for="jugador.Imagen" id="imagen" />
+               
+        </div>
+            <div class="offset-2">
+                <img class="" id="previzualizar" />
+
+                <div class="loader loading" style="display:none;"></div>
+            </div>
+
+            @if (Model.jugador.Id !=0)
+            {
+                <div class="col-8 offset-2 rounded text-center">
+                    <br />
+                    <img src="@Model.jugador.Imagen" class="upsert_img" />
+                </div>
+            }
+            <div>
+        
+          <partial name="_EquipoButtons"/>
+        </div>
+    
+    </form>
+</section>
+<script type="text/javascript" src="~/js/imagenView.js"></script>
+@section scripts{
+    @{
+    <partial name="_ValidationScriptsPartial" />
+}
+}
+

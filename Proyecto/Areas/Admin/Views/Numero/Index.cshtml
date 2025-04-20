@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@if (TempData["success"] != null)
+{
+    <div>
+        <h2 class="text-danger"> @TempData["success"]</h2>
+    </div>
+}
+<section>
+    <div class="row">
+        <div class="col-12 col-lg-6 ">
+            <a asp-action="upsert" class="btn btn-primary my-5  form-control" asp-controller="numero" asp-area="Admin"> <i class="bi bi-cloud-plus-fill iconAdd"></i> <span> Numeros</span></a>
+
+
+        </div>
+
+        <div class="table-responsive">
+        </div>
+        <table id="tblNumero" class="table-striped table">
+            <thead>
+                <tr>
+                    <th>JUGADOR</th>
+                    <th>H1</th>
+                    <th>H2</th>
+                    <th>H3</th>
+                    <th>H4</th>
+                    <th>BB</th>
+                    <th>KK</th>
+                    <th>AVG</th>
+                   
+                    <th></th>
+
+                </tr>
+            </thead>
+        </table>
+    </div>
+    </div>
+</section>
+
+
+@section scripts{
+
+    <script src="~/js/Numero.js"></script>
+}
+
+

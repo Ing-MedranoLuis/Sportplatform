@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@if (TempData["success"] != null)
+{
+    <div>
+        <h2 class="text-danger"> @TempData["success"]</h2>
+    </div>
+}
+<section>
+    <div class="row">
+        <div class="col-12 col-lg-6 ">
+            <a asp-action="upsert" class="btn btn-primary my-5  form-control" asp-controller="noticia" asp-area="Admin"> <i class="bi bi-cloud-plus-fill iconAdd"></i> <span> Crear noticia</span></a>
+
+
+        </div>
+
+        <div class="table-responsive">
+        </div>
+        <table id="tblNoticia" class="table-striped table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Orden</th>
+                    <th>Accion</th>
+                    <th></th>
+
+                </tr>
+            </thead>
+        </table>
+    </div>
+    
+</section>
+
+
+@section scripts{
+
+    <script src="~/js/Noticia.js"></script>
+}
+
+
+

@@ -1,0 +1,35 @@
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.data.deps.json
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.data.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.data.pdb
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.models.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.roles.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.models.pdb
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.roles.pdb
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.csproj.AssemblyReference.cache
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.AssemblyInfoInputs.cache
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.AssemblyInfo.cs
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.csproj.CoreCompileInputs.cache
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.csproj.CopyComplete
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\refint\Proyecto.data.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.pdb
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\ref\Proyecto.data.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.data.deps.json
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.data.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.data.pdb
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.models.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.roles.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.models.pdb
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\bin\Release\net7.0\Proyecto.roles.pdb
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.csproj.AssemblyReference.cache
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.AssemblyInfoInputs.cache
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.AssemblyInfo.cs
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.csproj.CoreCompileInputs.cache
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.sourcelink.json
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.CB1CE0F7.Up2Date
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\refint\Proyecto.data.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\Proyecto.data.pdb
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.data\obj\Release\net7.0\ref\Proyecto.data.dll

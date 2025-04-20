@@ -1,0 +1,476 @@
+﻿/*@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700;6..12,800&display=swap');
+
+*/
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+body {
+    text-decoration:none;
+    
+}
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+/*
+    JS CLASSES
+*/
+
+.hiddencard{
+    opacity:0;
+    transform:translateY(18rem);
+}
+.observer_div0 {
+    position: fixed;
+    top: 10px;
+    transition: all 2300ms ease;
+    width: 25.3%;
+    left: 990px;
+}
+.observer_div1 {
+    position: fixed;
+    top: 375px;
+    width: 25.3%;
+    left: 990px;
+}
+
+
+
+
+
+
+
+
+/*
+    JS CLASSES
+*/
+.iconAdd {
+  
+    font-size:10px;
+    padding:0 3px;
+   
+  
+}
+.ddl{
+    z-index:100;
+}
+.slide {
+    height: auto;
+}
+.div_img{
+    height:auto;
+}
+.div_img div {
+    height: auto;
+}
+.img_carousel {
+    width: 100%;
+    height: auto;
+}
+#btnSearch{
+    padding:0px;
+}
+.imgFooter{
+    width:400PX;
+  
+    height:auto;
+}
+.crearNuevoEquipoBtn {
+    width: auto
+}
+.div_estadisticas_buscarJugador {
+ 
+}
+.div_estadisticas_buscarJugador > button,input {
+    outline:none;
+   border:1px ridge;
+    padding:5px 10px;
+}
+.upsert_img{
+    width:30%;
+}
+
+section{
+    max-width:97%;
+    margin:auto;
+    margin-top:30PX
+   
+}
+.card_noticias {
+    height: auto;
+  /*  box-shadow: 0px 0px 5px 0px;*/
+    margin-top: 660px;
+    transition: all 400ms ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+    .card_noticias:hover {
+        opacity: 0.7;
+        transition: all 400ms ease;
+        
+    }
+
+    .card_noticias .card_body h1{
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        color: #444444;
+        font-size: 100px;
+        font-weight:  400;
+        font-style: normal;
+    }
+
+    .card_noticias .card_body p {
+        font-family: Helvetica, Arial, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 60px;
+    }
+.card_footer {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+  
+}
+
+
+.img_noticias_home {
+    height: auto;
+   
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+body {
+    background-color: rgba(241, 241, 241, 0.8);
+}
+.span_skill{
+    color:white;
+    width:100%;
+
+}
+.divLatestNew{
+    padding:0px 20px;
+}
+.latest_new {
+    height: auto;
+    background-color: white;
+    padding: 10PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    right: 0;
+    transition: all 1500ms ease;
+}
+.latest_new div {
+
+}
+a {
+    text-decoration: none;
+    transition: all 400ms ease;
+    color:black;
+    font-weight:900;
+}
+    .latest_new div a {
+      text-decoration:none;
+      transition:all 400ms ease;
+    }
+        .latest_new div a:hover {
+        
+
+            transition: all 400ms ease;
+        }
+h1{
+    text-transform:none;
+    font-size:20PX
+}
+button {
+    background-color: #041e42;
+    padding:10px 20px;
+    color:white;
+    border:none;
+}
+button:hover {
+    background-color: #041e42;
+   transform:translate3d();
+    color: white;
+}
+footer {
+    background-color: #041e42;
+    height:auto;
+    bottom:0;
+    width:100%;
+  margin-top:40px;
+}
+.video {
+    height: auto;
+    background-position: center;
+    border-radius: 7px 7px 0 0;
+}
+.players {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+   padding:10px;
+   
+}
+.onfire_player {
+   max-width:90%;
+   margin:auto;
+   padding:10px;
+}
+    .onfire_player img {
+        border-radius: 100%;
+        max-width: 60%;
+        margin: auto;
+        border: 4px solid black;
+        height: 190px;
+    }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #1a71be;
+    border-radius: 50px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+.player_cards {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+  /*  border: 1px white solid;*/
+    width: auto;
+    margin: 10px 4px;
+    padding: 5px 10px;
+    align-items: center;
+    background-color: white;
+   /* box-shadow: 0px 0px 5px 0px;*/
+}
+h5{
+    font-size:10px;
+    padding:1px
+}
+h6{
+    text-decoration:none;
+
+}
+    .players img {
+     
+     width:65px;
+     height:50px
+    }
+.bodi{
+
+}
+.bodi a {
+border-radius:30px;
+background-color:#1a71be;
+color:white;
+padding:3px 15px;
+}
+.playerContent {
+ flex-direction:row;
+   
+}
+#previzualizar {
+    margin:auto;
+    margin-top:20PX;
+    width: 66%;
+    height: auto;
+    border:none;
+    transition:all 1000ms ease;
+    opacity:0;
+   
+}
+.loader {
+    position:absolute;
+    left:45%;
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #3498db;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 0.5s linear infinite;
+}
+.mainLoader {
+    top: 300px;
+    position: absolute;
+    left: 45%;
+    border: 20px solid #041e42;
+    border-radius: 50%;
+    border-top: 20px solid #3498db;
+    width: 200px;
+    height: 200px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 0.5s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.title_new_card {
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    font-family: PoetsenOne;
+    transition: all 400ms ease;
+}
+    .title_new_card:hover {
+        color: #0287fc;
+        transition:all 400ms ease;
+    }
+.description_new_card {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.latest_new_img {
+    width: 30px;
+    height:30px;
+    border-radius:50%;
+    
+}
+.playerTeam_img {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+    .divLoad {
+        background-color: #041e42;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 120;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+.latest_new div {
+    width: 100%;
+}
+    .container_footer div {
+    }
+@media screen and (max-width: 700px) {
+    .header_gap{
+    width:100%;
+    height:50%;
+    background-color:#051430;
+   padding:10px;
+    display:flex;
+    justify-content:center;
+}
+    .mainLoader {
+        top: 15%;
+        position: absolute;
+        left: 25%;
+        border: 20px solid #041e42;
+        border-radius: 50%;
+        border-top: 20px solid #3498db;
+        width: 200px;
+        height: 200px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 0.5s linear infinite;
+    }
+        .header_gap img {
+            transform: scale(4);
+        }
+    header {
+        height: 15vh;
+        background-color: #041e42;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 10px 4px 50px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_noticias {
+        height: auto;
+        width: 100%;
+        margin-top: 660px;
+    /*  box-shadow: 0px 0px 5px 0px;
+
+        border-radius: 10px;*/
+    }
+    .title_new_card {
+        font-size: 20px;
+        font-weight: 700;
+        color: black;
+        font-family: PoetsenOne;
+        transition: all 400ms ease;
+    }
+
+    .description_new_card {
+        font-size: 10px;
+        font-weight: 400;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   
+    .img_noticias_home {
+ 
+        height: auto;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .latest_new {
+        height: auto;
+        width: 100%;
+        position: initial;
+        background-color: white;
+        padding: 10PX;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      /*  box-shadow: 0px 0px 5px 0px;*/
+    }
+        
+        .container_toggle {
+            background-color: #041e42;
+            padding: 0px 20px;
+        }
+   
+    .video {
+        height: auto;
+        background-position: center;
+        border-radius: 10px 10px 0 0;
+    }
+    footer{
+        bottom:0;
+    }
+ 
+}

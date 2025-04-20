@@ -1,0 +1,141 @@
+﻿@model Proyecto.models.VM.NumeJugadorVM
+@{
+    ViewData["Title"] = "Upsert";
+}
+<section>
+    
+
+    <form class="border shadow py-4 col-12 col-md-6 offset-md-3" action="upsert" method="post">
+        <div class="row">
+            <h2 class="text-center">@(Model.numero.Id != 0 ? "UPDATE NUMEROS" : "POST NUMEROS")</h2>
+            <div asp-validation-summary="ModelOnly" hidden></div>
+            <input asp-for="numero.Id" hidden />
+           
+
+            <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" >Equipos</label>
+                <select class="form-control shadow"  asp-items="@ViewData["listaEquipo"] as IEnumerable<SelectListItem>" id="equipoId">
+                    <option>Equipo</option>
+                </select>
+
+            </div>
+
+            <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="numero.IdJugador"></label>
+                <select class="form-control shadow" asp-for="numero.IdJugador" id="productoId">
+                    
+                </select>
+
+            </div>
+            <div class="col-3 offset-2">
+                <br />
+                <label class="form-label" asp-for="numero.H1"></label>
+                <input class="form-control shadow" asp-for="numero.H1" />
+                <span asp-validation-for="numero.H1" class="text-danger"></span>
+            </div>
+
+            <div class="col-3 offset-2">
+                <br />
+                <label class="form-label" asp-for="numero.H2"></label>
+                <input class=" form-control shadow" asp-for="numero.H2" />
+                <span asp-validation-for="numero.H2" class="text-danger"></span>
+            </div>
+
+            <div class="col-3 offset-2">
+                <br />
+                <label class="form-label" asp-for="numero.H3"></label>
+                <input class="form-control shadow" asp-for="numero.H3" />
+                <span asp-validation-for="numero.H3" class="text-danger"></span>
+            </div>
+            <div class="col-3 offset-2">
+                <br />
+                <label class="form-label" asp-for="numero.H4"></label>
+                <input class="form-control shadow" asp-for="numero.H4" />
+                <span asp-validation-for="numero.H4" class="text-danger"></span>
+            </div>
+            <div class="col-3 offset-2">
+                <br />
+                <label class="form-label" asp-for="numero.BB"></label>
+                <input class="form-control shadow" asp-for="numero.BB" />
+                <span asp-validation-for="numero.BB" class="text-danger"></span>
+            </div>
+            <div class="col-3 offset-2">
+                <br />
+                <label class="form-label" asp-for="numero.KK"></label>
+                <input class="form-control shadow" asp-for="numero.KK" />
+                <span asp-validation-for="numero.KK" class="text-danger"></span>
+            </div>
+         @*   <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="numero.Avg"></label>
+                <input class="form-control shadow" asp-for="numero.Avg" />
+                <span asp-validation-for="numero.Avg" class="text-danger"></span>
+            </div>*@
+           @*  <div class="col-8 offset-2">
+                <br />
+                <label class="form-label" asp-for="numero.TURNOS"></label>
+                <input class="form-control shadow" asp-for="numero.TURNOS" />
+                <span asp-validation-for="numero.TURNOS" class="text-danger"></span>
+            </div>*@
+          
+            <br />
+            <partial name="_NumeroButtons" />
+        </div>
+
+    </form>
+</section>
+
+@section scripts{
+    @{
+                                                    <partial name="_ValidationScriptsPartial" />
+    }
+    <script>
+
+
+        const equipoId = document.getElementById("equipoId");
+        document.addEventListener('load',function() {
+            GetJugadorJson();
+
+
+        });
+        equipoId.addEventListener("change", () => {
+
+            $("#productoId").text("");
+            GetJugadorJson();
+        
+        })
+
+        
+      
+
+        const GetJugadorJson= function() {
+            jQuery.ajax({
+                url: '@Url.Action("GetJugadorJson","Numero")',
+                type:"GET",
+                dataType:"Json",
+                data: {
+
+                    equiId: $("#equipoId").val(),
+
+                },
+                success:function(data){
+                $(data).each(function (index, item) {
+                       
+                    $("#productoId").append(`<option value="${+item.id}">${item.nombre}</option>`)
+                       // $("#productoId").append('<option value="'+item.id+'">'+item.nombre+'</option>')
+
+                    });
+                }
+
+            })
+
+
+
+        }
+
+        
+    </script>
+}
+

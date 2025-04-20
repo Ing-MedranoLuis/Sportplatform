@@ -1,0 +1,75 @@
+﻿@model Proyecto.models.Models.Numero
+@{
+ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="p-4">
+    <div class="row border shadow d-flex align-items-center p-2">
+        <div class="border rounded-5 col-sm-6 flex-column px-3 align-items-center d-flex">
+            <img src="@Model.jugador.Imagen" width="200"/>
+            <h2>@Model.jugador.Nombre</h2>
+        </div>
+        <div class="border rounded-5 col-sm-6 flex-column px-3 align-items-center d-flex">
+            <h5><strong>Avg:</strong> @Model.Avg</h5>
+            <h5><strong>Turnos Oficiales:</strong> @Model.TURNOSOFICIALES</h5>
+            <h5><strong>All Turnos:</strong> @Model.TURNOS</h5>
+        </div>
+        <div class="col-12 align-items-center">
+       <select id="idOptions" class="shadow btn btn-outline-primary" style="height:50px; width:100px;border:none;">
+                <option value="bubble">Burbuja</option>
+              <option value="bar">Barras</option>
+                <option value="doughnut">Dona</option>
+                <option value="line">Lineas</option>
+                <option value="polarArea">Area Polar</option>
+                <option value="radar">Radar</option>
+          </select>
+            <button class="shadow " id="btnSearch" style="height:50px; width:100px; border:1px solid;">Ver Grafico</button>
+          <a asp-area="user" class="" asp-action="estadisticas" asp-controller="home">Volver</a>
+        </div>
+     
+           
+        <div class="skills d-flex align-items-end col-sm-12">
+            <canvas id="idChart"></canvas>
+        </div>
+    </div>
+
+</section>
+
+@section scripts{
+
+
+    <script>
+        const btn = document.getElementById('btnSearch');
+
+
+        btn.addEventListener("click", ()=>{
+      
+            const div = document.querySelector('.skills');
+            div.innerHTML='<canvas width="500" height="200" id="idChart"></canvas>';
+        var select =document.getElementById("idOptions").value;
+        console.log(select);
+            new Chart('idChart', {
+            type:   `${select}`,
+            data: {
+                labels: ['H1', 'H2', 'H3', 'H4', 'BB','KK','OUT'],
+                datasets: [{
+                        backgroundColor: ['rgba(57, 255, 15, 0.19)', 'rgba(57, 255, 15, 0.19)', 'rgba(57, 255, 15, 0.19)', 'rgba(57, 255, 15, 0.19)', 'rgb(57, 255, 15)', 'rgba(255, 0, 0, 0.42)', 'rgba(255, 0, 0, 0.42)'],
+                    data: [`${@Model.H1}`, `${@Model.H2}`, `${@Model.H3}`, `${@Model.H4}`,`${@Model.BB}`,`${@Model.KK}`,`${@Model.OUT}`],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        });
+    </script>
+
+}

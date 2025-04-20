@@ -1,0 +1,25 @@
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\bin\Release\net7.0\Proyecto.roles.deps.json
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\bin\Release\net7.0\Proyecto.roles.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\bin\Release\net7.0\Proyecto.roles.pdb
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.csproj.AssemblyReference.cache
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.AssemblyInfoInputs.cache
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.AssemblyInfo.cs
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.csproj.CoreCompileInputs.cache
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\refint\Proyecto.roles.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.pdb
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\ref\Proyecto.roles.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\bin\Release\net7.0\Proyecto.roles.deps.json
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\bin\Release\net7.0\Proyecto.roles.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\bin\Release\net7.0\Proyecto.roles.pdb
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.csproj.AssemblyReference.cache
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.AssemblyInfoInputs.cache
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.AssemblyInfo.cs
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.csproj.CoreCompileInputs.cache
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.sourcelink.json
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\refint\Proyecto.roles.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\Proyecto.roles.pdb
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.roles\obj\Release\net7.0\ref\Proyecto.roles.dll

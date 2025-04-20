@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@using Proyecto.roles
+<ul class="navbar-nav">
+@if(SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+            <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><i class="bi bi-person-circle"></i>Hola @User.Identity.Name!</a>
+    </li>
+    <li class="nav-item ">
+        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button type="submit" class="nav-link btn btn-link text-white"><i class="bi bi-door-open-fill"></i>Logout</button>
+        </form>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        @* @if(User.IsInRole(Roles.Admin)){ *@
+            <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Register"><i class="bi bi-person-circle"></i>Crear</a>
+    @*     } *@
+        </li>
+    <li class="nav-item">
+            <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Login"><i class="bi bi-door-open-fill"></i>Iniciar</a>
+    </li>
+}
+</ul>

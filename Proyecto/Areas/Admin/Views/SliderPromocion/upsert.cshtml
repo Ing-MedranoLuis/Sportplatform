@@ -1,0 +1,55 @@
+﻿@model Proyecto.models.Models.SliderPromociones
+@{
+    ViewData["Title"] = "upsert";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+
+
+    <form class="border shadow py-4" action="upsert" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" hidden></div>
+            <input asp-for="Id" hidden />
+            <div class="col-6 offset-3">
+                <br />
+                <label class="form-label" asp-for="Name"></label>
+                <input class="form-control shadow" asp-for="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="col-6 offset-3">
+                <br />
+                <label class="form-label" asp-for="Active"></label>
+                <input class=" shadow" type="checkbox" asp-for="Active" />
+               
+            </div>
+
+            <div class="col-6 offset-3">
+                <br />
+                <label class="form-label" asp-for="Image"></label>
+                <input type="file" name="files" class="form-control shadow" asp-for="Image" />
+              
+            </div>
+@*
+            @if (Model.Id != 0)
+            {
+
+                <div class="col-8 offset-2 rounded text-center">
+                    <br />
+                    <img src="@Model.Image" class="upsert_img" />
+                </div>
+            }*@
+            <br />
+            <partial name="_SliderPromotionButtons" />
+        </div>
+
+    </form>
+</section>
+
+@section scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+

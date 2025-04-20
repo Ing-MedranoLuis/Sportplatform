@@ -1,0 +1,24 @@
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\bin\Debug\net7.0\Proyecto.models.deps.json
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\bin\Debug\net7.0\Proyecto.models.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\bin\Debug\net7.0\Proyecto.models.pdb
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.csproj.AssemblyReference.cache
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.AssemblyInfoInputs.cache
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.AssemblyInfo.cs
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.csproj.CoreCompileInputs.cache
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\refint\Proyecto.models.dll
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.pdb
+C:\Users\Luis Medrano\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\ref\Proyecto.models.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\bin\Debug\net7.0\Proyecto.models.deps.json
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\bin\Debug\net7.0\Proyecto.models.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\bin\Debug\net7.0\Proyecto.models.pdb
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.csproj.AssemblyReference.cache
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.AssemblyInfoInputs.cache
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.AssemblyInfo.cs
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.csproj.CoreCompileInputs.cache
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\refint\Proyecto.models.dll
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\Proyecto.models.pdb
+C:\Users\inglu\OneDrive\Desktop\Proyecto\Proyecto.models\obj\Debug\net7.0\ref\Proyecto.models.dll

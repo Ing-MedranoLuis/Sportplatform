@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div class="row">
+        <div class="col-12 col-lg-6 ">
+            <a asp-action="upsert" class="btn btn-primary my-5  form-control" asp-controller="SliderPromocion" asp-area="Admin"> <i class="bi bi-cloud-plus-fill iconAdd"></i> <span>Añadir nueva promocion</span></a>
+
+
+        </div>
+
+        <div class="table-responsive">
+        </div>
+        <table id="tblSliderPromociones" class="table-striped table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>fecha</th>
+                    <th>Active</th>
+                    <th>Accion</th>
+
+                </tr>
+            </thead>
+        </table>
+    </div>
+    </div>
+</section>
+
+
+@section scripts{
+
+    <script src="~/js/SliderPromociones.js"></script>
+}
+

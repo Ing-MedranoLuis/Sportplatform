@@ -1,0 +1,204 @@
+﻿
+@model Proyecto.models.VM.HomeVM
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="section_index">
+    <div class="container_index_page">
+        <div class="slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+
+                 @foreach(var item in Model.sliderPromociones.Select((image,index)=>new { Image = image, Index = index }))
+                {
+                    
+               
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="@item.Index" class="@(item.Index==0?"active":"")" aria-current="true" aria-label="Slide 1"></button>
+                
+                } 
+            </div>
+                <div class="carousel-inner div_img">
+
+                @foreach (var item in Model.sliderPromociones.Select((image, index) => new { Image = image, Index = index }))
+                {
+
+                    <div class="@(item.Index==0?"carousel-item active":"carousel-item")  ">
+                    <img  src="@item.Image.Image" class="d-block w-100 img_carousel" >
+                </div>
+                   
+                } 
+               
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div> 
+       
+        <div class="players">
+           
+          
+                @foreach (var item in Model.Numero.OrderBy(u=>u.Avg>100))
+                {
+
+
+
+                <div class="player_cards shadow ">
+
+                    <img class="rounded-5" src="@item.jugador.Imagen"/>
+                    
+                    <h5>@item.jugador.Nombre</h5>
+                   
+                    <img src="@item.jugador.equipo.Imagen" class="playerTeam_img p-1 mr-2 " />
+                  <h5 class="text-info"><strong class="text-info">@("@")</strong>@item.jugador.equipo.Nombre</h5>
+                   
+                    <div class="bodi mb-2">
+                        <a class=""><i class="bi bi-plus"></i>Seguir</a>
+                    </div>
+                      
+                 
+                </div>
+
+
+
+
+
+
+
+                }
+         
+        </div>
+        
+        <div class="d-md-flex  d-flex flex-column-reverse flex-md-row">
+            <div class="col-md-8 col-12">
+            @foreach (var item in Model.noticias.OrderByDescending(n => n.Fecha))
+            {
+                    <div class="col-md-12 shadow cardreveal hiddencard card_noticias  mt-3 mb-md-3 ">
+                    <a asp-action="DetallesNoticias" asp-route-id="@item.Id" asp-controller="home" asp-area="user">
+
+                        @if (item.video)
+                        {
+                            <video class="video" src="@item.Imagen" typeof="video/mp4" controls="controls" muted autoplay width="100%" height="360"></video>
+
+
+                        }
+                        else
+                        {
+                            <img src="@item.Imagen" class="img_noticias_home" />
+                        }
+                        <div class="card_footer p-3">
+
+                            <p class="title_new_card" ><b>@item.Titulo. </b></p>
+                            
+                        <video src="@item.Imagen" typeof="video/mp4" controls="controls"  autoplay width="100%" height="360"></video>
+
+ 
+                            <p class="description_new_card">@item.Descripcion.Substring(0, 60)...</p>
+
+                        </div>
+                    </a>
+
+
+
+                </div>
+
+            }
+            </div>
+            <div class="col-md-4 mt-3 p-3  d-md-block d- divStatico" >
+                <div class="latest_new shadow divLatestNew ">
+                <H1 class="title_new_card"><B>Ultimas Noticias</B></H1>
+                <div class="">
+                    @foreach (var item in Model.noticias.OrderByDescending(n => n.Fecha))
+                    {
+
+
+
+                        <a href="" class="d-flex ">  <img src="~/mlb logo.png" class="latest_new_img p-1 mr-2 border" />   <p><b>@item.Titulo. </b></p></a>
+
+
+
+
+
+
+
+
+
+                    }
+                </div>
+            </div>
+
+                <div class="col-md-12 mt-3  " >
+                    <div class="latest_new shadow observe">
+                        <H1 class="title_new_card"><B >Equipos</B></H1>
+                        <div class=" ">
+                            @foreach (var item in Model.Jugador)
+                            {
+
+
+
+                                <a href="" class="d-flex ">  <img src="@item.equipo.Imagen" class="latest_new_img p-1 mr-2 border" />   <p><b>@item.equipo.Nombre. </b></p></a>
+
+
+
+
+
+
+
+
+
+                            }
+                        </div>
+                    </div>
+                </div>  
+
+               @* <div class="col-md-12 mt-3  " >
+                    <div class="latest_new shadow observe ">
+                        <H1 class="title_new_card"><B>Jugador onfire</B></H1>
+                        <div class=" ">
+                           
+                            @foreach (var item in Model.Numero.Where(u=>u.Avg>750))
+                            {
+
+
+
+                                <a  asp-controller="home" asp-action="PerfilJugador" asp-route-id="@item.Id" class=" d-flex onfire_player ">  <img src="@item.jugador.Imagen" class=" " />   <p><b> </b></p></a>
+
+                                <div class="d-md-flex d-flex flex-wrap">
+                                    <p class="col-4 col-md-4 text-center"><i class="bi bi-battery-charging"></i>Avg:@item.Avg</p>
+                                    <p class="col-4 col-md-4 text-center"><i class="bi bi-battery-charging"></i>HR:@item.H4</p>
+                                    <p class="col-4 col-md-4 text-center"><i class="bi bi-battery-charging"></i>H1:@item.H1</p>
+                                    <p class="col-4 col-md-4 text-center"><i class="bi bi-battery-charging"></i>H2:@item.H2</p>
+                                    <p class="col-4 col-md-4 text-center"> <i class="bi bi-battery-charging"></i>H3:@item.H3</p>
+                                    <p class="col-4 col-md-4 text-center"> <i class="bi bi-battery-charging"></i>BB:@item.BB</p>
+                                </div>
+
+
+
+
+
+
+
+                            }
+                        </div>
+                    </div>
+                </div>  *@
+            </div>
+            
+        </div>
+     
+       
+
+
+    </div>
+
+
+
+</section>
